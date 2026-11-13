@@ -1,0 +1,524 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KINETIX developer infrastructure. Build, deploy, and scale APIs with a global edge network.">
+  <meta name="theme-color" content="#080a0e">
+  <title>KINETIX — Infrastructure for What's Next</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header" id="top">
+    <a href="#top" class="brand" aria-label="KINETIX home">
+      <span class="brand-mark">K</span>
+      KINETIX<span class="brand-period">.</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav" id="main-nav" aria-label="Main navigation">
+      <a href="#platform">Platform</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#network">Network</a>
+      <a href="#developers">Developers</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="login-link" href="#developers">Documentation</a>
+      <a class="button button-small" href="#quickstart">Get started <span>↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero grid-background">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="announcement">
+            <span class="status-dot"></span>
+            <span>INTRODUCING KINETIX EDGE 2.0</span>
+            <a href="#network">Explore what's new <span>→</span></a>
+          </div>
+
+          <h1>Infrastructure<br>for what's <span>next.</span></h1>
+
+          <p class="hero-description">
+            The developer platform for building, shipping, and scaling
+            APIs at the speed of your ideas. One interface. Global reach.
+            Zero unnecessary complexity.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="button button-primary" href="#quickstart">
+              Start building <span>↗</span>
+            </a>
+            <a class="button button-ghost" href="#architecture">
+              Explore the platform <span>→</span>
+            </a>
+          </div>
+
+          <div class="hero-proof">
+            <span class="proof-icon">✓</span>
+            <span>No credit card required</span>
+            <span class="proof-divider">·</span>
+            <span>Developer-first by design</span>
+          </div>
+        </div>
+
+        <div class="terminal-window" aria-label="Interactive code example">
+          <div class="terminal-topbar">
+            <div class="window-dots">
+              <span></span><span></span><span></span>
+            </div>
+
+            <span class="terminal-title">api-request / quickstart</span>
+
+            <span class="terminal-live">
+              <i></i> LIVE EXAMPLE
+            </span>
+          </div>
+
+          <div class="code-tabs" role="tablist" aria-label="Programming language">
+            <button class="code-tab active" role="tab" aria-selected="true" data-language="curl">cURL</button>
+            <button class="code-tab" role="tab" aria-selected="false" data-language="python">Python</button>
+            <button class="code-tab" role="tab" aria-selected="false" data-language="node">Node.js</button>
+          </div>
+
+          <div class="code-content">
+            <div class="code-meta">
+              <span id="code-file">request.sh</span>
+              <button class="copy-button" id="copy-code" type="button">
+                <span>Copy code</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+                  <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"></path>
+                </svg>
+              </button>
+            </div>
+
+            <pre class="code-block"><code id="code-example" class="language-curl">curl https://api.kinetix.dev/v1/compute \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "kinetix-core",
+    "input": "Hello, world!"
+  }'</code></pre>
+
+            <div class="terminal-output">
+              <div class="output-heading">
+                <span class="output-indicator"></span>
+                RESPONSE PREVIEW
+                <span class="output-status">200 OK</span>
+              </div>
+              <pre><code>{
+  "id": "req_8f2a91",
+  "status": "completed",
+  "latency_ms": 42
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-footer">
+        <span>BUILT FOR DEVELOPERS, NOT DISTRACTIONS.</span>
+        <span>SCROLL TO EXPLORE ↓</span>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="trust-strip" aria-label="Platform capabilities">
+      <p>THE INFRASTRUCTURE LAYER FOR MODERN TEAMS</p>
+      <div class="trust-items">
+        <span><i>✳</i> API-FIRST</span>
+        <span><i>⌘</i> DEVELOPER-CENTRIC</span>
+        <span><i>◈</i> EDGE-READY</span>
+        <span><i>↗</i> BUILT TO SCALE</span>
+      </div>
+    </section>
+
+    <!-- PLATFORM -->
+    <section class="platform section" id="platform">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">01 / THE PLATFORM</span>
+          <h2>Everything you need.<br><span>Nothing you don't.</span></h2>
+        </div>
+
+        <p>
+          From the first API call to global production workloads,
+          KINETIX gives your team a clean path from idea to infrastructure.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card feature-large">
+          <div class="feature-icon purple-icon">⌘</div>
+          <span class="feature-label">01 / API GATEWAY</span>
+          <h3>One endpoint.<br>Infinite possibilities.</h3>
+          <p>
+            Route, authenticate, and manage requests through one consistent
+            API interface built for predictable integrations.
+          </p>
+          <div class="gateway-visual">
+            <div class="gateway-node">YOUR APP</div>
+            <span class="gateway-arrow">→</span>
+            <div class="gateway-node gateway-main">KINETIX API</div>
+            <span class="gateway-arrow">→</span>
+            <div class="gateway-node">SERVICES</div>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon green-icon">◎</div>
+          <span class="feature-label">02 / EDGE COMPUTE</span>
+          <h3>Closer to every request.</h3>
+          <p>
+            A distributed edge architecture designed to reduce unnecessary
+            distance between your application and its users.
+          </p>
+          <div class="mini-edge">
+            <span></span><span></span><span></span><span></span><span></span>
+            <div class="edge-line"></div>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon orange-icon">⌁</div>
+          <span class="feature-label">03 / OBSERVABILITY</span>
+          <h3>See the whole picture.</h3>
+          <p>
+            Understand request health, response times, and system behaviour
+            through a unified operational view.
+          </p>
+          <div class="observability-bars">
+            <span style="--bar:45%"></span>
+            <span style="--bar:72%"></span>
+            <span style="--bar:58%"></span>
+            <span style="--bar:92%"></span>
+            <span style="--bar:66%"></span>
+            <span style="--bar:83%"></span>
+            <span style="--bar:52%"></span>
+            <span style="--bar:98%"></span>
+            <span style="--bar:74%"></span>
+            <span style="--bar:88%"></span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURE -->
+    <section class="architecture section grid-background" id="architecture">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">02 / SYSTEM ARCHITECTURE</span>
+          <h2>Designed for<br><span>the distributed world.</span></h2>
+        </div>
+
+        <p>
+          A clear request path from your application to the edge,
+          through intelligent routing, and into your services.
+        </p>
+      </div>
+
+      <div class="architecture-board">
+        <div class="architecture-topline">
+          <span>REQUEST FLOW / SYSTEM OVERVIEW</span>
+          <span><i class="status-dot"></i> ALL SYSTEMS OPERATIONAL</span>
+        </div>
+
+        <div class="architecture-flow">
+          <div class="architecture-node node-client" tabindex="0" data-tooltip="Your application sends a secure API request.">
+            <span class="node-icon">⌘</span>
+            <strong>Your application</strong>
+            <small>CLIENT REQUEST</small>
+          </div>
+
+          <div class="flow-connector"><span>HTTPS</span><i></i></div>
+
+          <div class="architecture-node node-gateway" tabindex="0" data-tooltip="The gateway authenticates and validates incoming requests.">
+            <span class="node-icon">◇</span>
+            <strong>API gateway</strong>
+            <small>AUTH · RATE LIMITS</small>
+          </div>
+
+          <div class="flow-connector"><span>ROUTE</span><i></i></div>
+
+          <div class="architecture-node node-router" tabindex="0" data-tooltip="The routing layer directs requests to an appropriate edge location.">
+            <span class="node-icon">◎</span>
+            <strong>Smart routing</strong>
+            <small>EDGE SELECTION</small>
+          </div>
+        </div>
+
+        <div class="edge-branch-label">
+          <span></span>
+          GLOBAL EDGE LOCATIONS
+          <span></span>
+        </div>
+
+        <div class="edge-branches">
+          <div class="architecture-node edge-node" tabindex="0" data-tooltip="Illustrative North America edge location.">
+            <span class="edge-flag">NA</span>
+            <strong>North America</strong>
+            <small>EDGE NODE 01</small>
+          </div>
+
+          <div class="architecture-node edge-node" tabindex="0" data-tooltip="Illustrative Europe edge location.">
+            <span class="edge-flag">EU</span>
+            <strong>Europe</strong>
+            <small>EDGE NODE 02</small>
+          </div>
+
+          <div class="architecture-node edge-node" tabindex="0" data-tooltip="Illustrative Asia Pacific edge location.">
+            <span class="edge-flag">AP</span>
+            <strong>Asia Pacific</strong>
+            <small>EDGE NODE 03</small>
+          </div>
+        </div>
+
+        <div class="branch-connectors">
+          <span></span><span></span><span></span>
+        </div>
+
+        <div class="service-node architecture-node" tabindex="0" data-tooltip="Your backend services receive the routed request.">
+          <span class="node-icon">▣</span>
+          <strong>Your services & data</strong>
+          <small>COMPUTE · STORAGE · DATABASE</small>
+        </div>
+
+        <div class="architecture-legend">
+          <span><i class="legend-green"></i> Request path</span>
+          <span><i class="legend-purple"></i> Routing layer</span>
+          <span><i class="legend-gray"></i> Infrastructure</span>
+        </div>
+      </div>
+
+      <p class="architecture-note">
+        Conceptual architecture illustration. Locations and routing behaviour are examples,
+        not a representation of a live production network.
+      </p>
+    </section>
+
+    <!-- GLOBAL NETWORK -->
+    <section class="network section" id="network">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">03 / GLOBAL EDGE NETWORK</span>
+          <h2>Built for a world<br><span>without borders.</span></h2>
+        </div>
+
+        <p>
+          A distributed infrastructure concept designed to bring
+          applications closer to the people who use them.
+        </p>
+      </div>
+
+      <div class="network-panel">
+        <div class="world-map" aria-hidden="true">
+          <div class="map-dots"></div>
+          <span class="map-point point-na"></span>
+          <span class="map-point point-eu"></span>
+          <span class="map-point point-af"></span>
+          <span class="map-point point-ap"></span>
+          <span class="map-point point-sa"></span>
+          <span class="map-point point-au"></span>
+        </div>
+
+        <div class="map-caption">
+          <span><i class="status-dot"></i> DISTRIBUTED BY DESIGN</span>
+          <span>ILLUSTRATIVE NETWORK MAP</span>
+        </div>
+
+        <div class="network-stats">
+          <article>
+            <span class="stat-label">EDGE LOCATIONS</span>
+            <strong data-count="42">0</strong>
+            <small>Illustrative locations</small>
+          </article>
+
+          <article>
+            <span class="stat-label">UPTIME TARGET</span>
+            <strong data-count="99.99" data-decimals="2" data-suffix="%">0</strong>
+            <small>Concept service objective</small>
+          </article>
+
+          <article>
+            <span class="stat-label">REGIONS</span>
+            <strong data-count="18">0</strong>
+            <small>Illustrative regions</small>
+          </article>
+
+          <article>
+            <span class="stat-label">API RESPONSE TARGET</span>
+            <strong data-count="45" data-suffix="ms">0</strong>
+            <small>Illustrative response target</small>
+          </article>
+        </div>
+      </div>
+
+      <p class="network-disclaimer">
+        Network figures are illustrative design content and are not live service measurements.
+      </p>
+    </section>
+
+    <!-- QUICK START / DOCS -->
+    <section class="developers section" id="developers">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">04 / DEVELOPER EXPERIENCE</span>
+          <h2>From first call<br><span>to first deploy.</span></h2>
+        </div>
+
+        <p>
+          Useful documentation, predictable SDK patterns, and a clear
+          starting point for every developer.
+        </p>
+      </div>
+
+      <div class="docs-grid" id="quickstart">
+        <article class="docs-card">
+          <div class="docs-card-top">
+            <span class="docs-icon">⌘</span>
+            <span class="docs-index">01</span>
+          </div>
+          <div class="docs-card-content">
+            <span class="docs-category">DOCUMENTATION</span>
+            <h3>API reference</h3>
+            <p>
+              Explore endpoints, request formats, response structures,
+              authentication, and error handling.
+            </p>
+          </div>
+          <a href="#api-reference" class="docs-link">Explore API reference <span>↗</span></a>
+        </article>
+
+        <article class="docs-card">
+          <div class="docs-card-top">
+            <span class="docs-icon">⌘</span>
+            <span class="docs-index">02</span>
+          </div>
+          <div class="docs-card-content">
+            <span class="docs-category">SDK LIBRARIES</span>
+            <h3>Build with your stack</h3>
+            <p>
+              Start with familiar examples for Python, JavaScript,
+              and command-line workflows.
+            </p>
+          </div>
+          <a href="#code-example" class="docs-link">Browse SDK examples <span>↗</span></a>
+        </article>
+
+        <article class="docs-card">
+          <div class="docs-card-top">
+            <span class="docs-icon">↗</span>
+            <span class="docs-index">03</span>
+          </div>
+          <div class="docs-card-content">
+            <span class="docs-category">GETTING STARTED</span>
+            <h3>Your first request</h3>
+            <p>
+              Follow a simple introduction to credentials, API requests,
+              and understanding responses.
+            </p>
+          </div>
+          <a href="#api-reference" class="docs-link">Read the quick start <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- API REFERENCE SAMPLE -->
+    <section class="api-reference section" id="api-reference">
+      <div class="api-reference-copy">
+        <span class="eyebrow">05 / SIMPLE BY DEFAULT</span>
+        <h2>Less setup.<br><span>More building.</span></h2>
+        <p>
+          A developer experience should make the next step obvious.
+          Start with one request and build from there.
+        </p>
+        <a href="#top" class="button button-primary">Back to top <span>↑</span></a>
+      </div>
+
+      <div class="api-response-card">
+        <div class="response-header">
+          <span>EXAMPLE / API RESPONSE</span>
+          <span class="response-pill">200 OK</span>
+        </div>
+        <pre><code>{
+  "success": true,
+  "data": {
+    "message": "Welcome to KINETIX",
+    "environment": "development",
+    "request_id": "req_demo_001"
+  },
+  "meta": {
+    "version": "v1"
+  }
+}</code></pre>
+        <div class="response-footer">
+          <span><i class="status-dot"></i> EXAMPLE RESPONSE</span>
+          <span>JSON</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="final-cta grid-background">
+      <span class="eyebrow">YOUR NEXT BUILD STARTS HERE</span>
+      <h2>Make your next<br><span>idea unstoppable.</span></h2>
+      <p>Build with clarity. Scale with confidence. Keep moving.</p>
+      <a href="#quickstart" class="button button-primary">Start building <span>↗</span></a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <span class="brand-mark">K</span>
+          KINETIX<span class="brand-period">.</span>
+        </a>
+        <p>Infrastructure for what's next.</p>
+      </div>
+
+      <div class="footer-column">
+        <span>PLATFORM</span>
+        <a href="#platform">Overview</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#network">Global network</a>
+      </div>
+
+      <div class="footer-column">
+        <span>DEVELOPERS</span>
+        <a href="#developers">Documentation</a>
+        <a href="#quickstart">Quick start</a>
+        <a href="#api-reference">API reference</a>
+      </div>
+
+      <div class="footer-column">
+        <span>PROJECT</span>
+        <a href="#top">About KINETIX</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> KINETIX. CONCEPT PROJECT.</span>
+      <span>DESIGNED FOR DEVELOPERS.</span>
+      <span>BUILT WITH HTML · CSS · JS</span>
+    </div>
+  </footer>
+</body>
+</html>
